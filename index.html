@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One - API </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr4_9ddCNX-UTghvmc-lLKP5PcA3asOpE&libraries=places"></script>
+
+
+</head>
+<body>
+
+    <div class="distancematrix">
+        <h1>Google Maps Distnace Matrix</h1>
+        <form action="">
+            <div class="addresses">
+                <input class="autocomplete" type="text" id="start-address" placeholder="Enter Starting Address" onfocus="initAutocomplete();">
+                <input class="autocomplete" type="text" id="destination-address" placeholder="Enter Destination" onfocus="initAutocomplete();">
+            </div>
+            <div class="filters">
+                <div class="filter-1">
+                <h4>Unit</h4>
+                <select name="Units" id="units">
+                    <option value="metric">Metric</option>
+                    <option value="imperial">Imperial</option>
+                </select>
+            </div>
+            <div>
+                <h4>Travel Mode</h4>
+                <select name="mode" id="mode">
+                    <option value="driving">Driving</option>
+                    <option value="walking">Walking</option>
+                    <option value="bicycling">Bicyle</option>
+                    <option value="transit">Public Transport</option>
+                </select>
+            </div>
+        </div>
+         
+        <input class="btn" type="button" id="submit" value="Get Distnace" onclick="getDetails();" >
+        </form>
+        <div id="show-details">
+         </div>
+    </div>
+    
+</body>  
+   
+</html>
