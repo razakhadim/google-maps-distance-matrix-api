@@ -5,7 +5,7 @@ let destination;
 let unit;
 let travelMode;
 let urlEndPoint;
-const API_KEY = "AIzaSyCr4_9ddCNX-UTghvmc-lLKP5PcA3asOpE";
+const API_KEY = "API_KEY_COMES_HERE";
 
 //function to get start address
 
